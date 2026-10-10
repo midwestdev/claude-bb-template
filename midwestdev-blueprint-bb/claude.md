@@ -407,6 +407,13 @@ A blank JavaScript file should be created in `assets/js/` for potential custom s
 - Shows client's actual designed site
 - Take screenshot when design is finalized
 
+### 10. Remove the Copied Blueprint Docs
+
+The new theme folder starts as a copy of this one, so it carries this `claude.md` and `project_claude.md`. Once steps 1-9 are done, scrap the copies — they duplicate the master and go stale:
+
+1. **Delete the copied `claude.md`** from the new theme. Don't keep it renamed as `blueprint.md`. Read conventions from the master instead: `D:\Local Sites\aa-blueprint\app\public\wp-content\themes\midwestdev-blueprint-bb\claude.md` (or `midwestdev/themes` on GitHub). Delete it first: on Windows `claude.md` and `CLAUDE.md` are the same file.
+2. **Turn `project_claude.md` into the new theme's own `CLAUDE.md`** (project specifics only, plus a pointer to the master above), then delete `project_claude.md`. Never keep both.
+
 ### Setup Checklist Summary
 
 **Theme Naming & Structure:**
@@ -425,6 +432,10 @@ A blank JavaScript file should be created in `assets/js/` for potential custom s
 - [ ] Update font variables in `_variables.scss`
 - [ ] Create `assets/js/{client-name}.js` file
 - [ ] Add commented-out JS enqueue function to functions.php
+
+**Blueprint Docs (end of setup):**
+- [ ] Delete the copied `claude.md` (no `blueprint.md` copy) — read the aa-blueprint master instead
+- [ ] Fold `project_claude.md` into the theme's own `CLAUDE.md`, then delete it
 
 **Finalization:**
 - [ ] Compile SCSS to generate updated style.css
